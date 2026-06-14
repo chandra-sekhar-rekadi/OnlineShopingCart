@@ -51,25 +51,6 @@ public class ProductOrder {
 	@OneToOne(cascade = CascadeType.ALL)
 	private OrderAddress orderAddress;
 
-	public ProductOrder(Integer id, String orderId, LocalDate orderDate, Product product, Double price,
-			Integer quantity, UserDtls user, String status, String paymentType, OrderAddress orderAddress) {
-		super();
-		this.id = id;
-		this.orderId = orderId;
-		this.orderDate = orderDate;
-		this.product = product;
-		this.price = price;
-		this.quantity = quantity;
-		this.user = user;
-		this.status = status;
-		this.paymentType = paymentType;
-		this.orderAddress = orderAddress;
-	}
-
-	public ProductOrder() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public Integer getId() {
 		return id;
 	}

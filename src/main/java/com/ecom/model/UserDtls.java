@@ -13,8 +13,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@AllArgsConstructor
-@NoArgsConstructor
+
 @Getter
 @Setter
 @Entity
@@ -57,33 +56,6 @@ public class UserDtls {
 	private String resetToken;
 
 	
-	public UserDtls() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public UserDtls(Integer id, String name, String mobileNumber, String email, String address, String city,
-			String state, String pincode, String password, String profileImage, String role, Boolean isEnable,
-			Boolean accountNonLocked, Integer failedAttempt, Date lockTime, String resetToken) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.mobileNumber = mobileNumber;
-		this.email = email;
-		this.address = address;
-		this.city = city;
-		this.state = state;
-		this.pincode = pincode;
-		this.password = password;
-		this.profileImage = profileImage;
-		this.role = role;
-		this.isEnable = isEnable;
-		this.accountNonLocked = accountNonLocked;
-		this.failedAttempt = failedAttempt;
-		this.lockTime = lockTime;
-		this.resetToken = resetToken;
-	}
-
 	public Integer getId() {
 		return id;
 	}

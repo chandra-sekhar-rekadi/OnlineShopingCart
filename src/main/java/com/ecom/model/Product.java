@@ -45,24 +45,7 @@ public class Product {
 	
 	private Boolean isActive;
 
-	public Product()
-	{
-		
-	}	
-	public Product(Integer id, String title, String description, String category, Double price, int stock, String image,
-			int discount, Double discountPrice, Boolean isActive) {
-		super();
-		this.id = id;
-		this.title = title;
-		this.description = description;
-		this.category = category;
-		this.price = price;
-		this.stock = stock;
-		this.image = image;
-		this.discount = discount;
-		this.discountPrice = discountPrice;
-		this.isActive = isActive;
-	}
+	
 
 	public Integer getId() {
 		return id;

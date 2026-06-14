@@ -6,8 +6,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Entity
 @Table(name="TBL_ORDERADDRESSMASTER")
@@ -39,24 +43,7 @@ public class OrderAddress {
 
 	private String pincode;
 
-	public OrderAddress(Integer id, String firstName, String lastName, String email, String mobileNo, String address,
-			String city, String state, String pincode) {
-		super();
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
-		this.mobileNo = mobileNo;
-		this.address = address;
-		this.city = city;
-		this.state = state;
-		this.pincode = pincode;
-	}
-
-	public OrderAddress() {
-		// TODO Auto-generated constructor stub
-	}
-
+	
 	public Integer getId() {
 		return id;
 	}

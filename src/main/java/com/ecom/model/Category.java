@@ -34,16 +34,7 @@ public class Category {
 
 	private Boolean isActive;
 
-	public Category() {
-		
-	}
-	public Category(Integer id, String name, String imageName, Boolean isActive) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.imageName = imageName;
-		this.isActive = isActive;
-	}
+	
 
 	public Integer getId() {
 		return id;

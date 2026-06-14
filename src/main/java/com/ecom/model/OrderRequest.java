@@ -26,21 +26,6 @@ public class OrderRequest {
 	
 	private String paymentType;
 
-	public OrderRequest() {}
-	public OrderRequest(String firstName, String lastName, String email, String mobileNo, String address, String city,
-			String state, String pincode, String paymentType) {
-		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
-		this.mobileNo = mobileNo;
-		this.address = address;
-		this.city = city;
-		this.state = state;
-		this.pincode = pincode;
-		this.paymentType = paymentType;
-	}
-
 	public String getFirstName() {
 		return firstName;
 	}

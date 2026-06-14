@@ -41,21 +41,7 @@ public class Cart {
 	private Double totalOrderPrice;
 
 	
-	public Cart(Integer id, UserDtls user, Product product, Integer quantity, Double totalPrice,
-			Double totalOrderPrice) {
-		super();
-		this.id = id;
-		this.user = user;
-		this.product = product;
-		this.quantity = quantity;
-		this.totalPrice = totalPrice;
-		this.totalOrderPrice = totalOrderPrice;
-	}
-
-	public Cart() {
-		// TODO Auto-generated constructor stub
-	}
-
+	
 	public Integer getId() {
 		return id;
 	}
